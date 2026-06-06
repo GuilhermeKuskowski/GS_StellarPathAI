@@ -32,10 +32,12 @@ sobre o dataset de crateras do Polo Sul Lunar
 ---
 
 ## Estrutura do Projeto
-stellarpath-ai/
+
+```
+GS_StellarPathAI/
 ├── stellarpath_rota.py   # Script principal — algoritmo completo
-├── README.md             # Este arquivo
-└── requirements.txt      # Sem dependências externas
+└── README.md             # Este arquivo
+```
 
 ---
 
@@ -49,8 +51,8 @@ stellarpath-ai/
 ### Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/stellarpath-ai.git
-cd stellarpath-ai
+git clone https://github.com/GuilhermeKuskowski/GS_StellarPathAI.git
+cd GS_StellarPathAI
 ```
 
 ### Execução
@@ -100,15 +102,19 @@ recalcula a rota aceitando zonas críticas com penalidade de 50%.
 ---
 
 ## Grafo do Terreno Lunar
-Col→   0    1    2    3    4    5
+
+```
+    Col→   0    1    2    3    4    5
 Lin↓
-0  BASE  [1]  [1]  [4]  [7] [10]  [7]
-1        [1]  [4]  [4]  [7] [10]  [4]
-2        [4]  [4]  [1]  [1]  [7]  [4]
-3        [7] [10]  [1]  [1]  [4]  [1]
-4        [7] [10]  [4]  [4]  [1]  [1]
-5       [10]  [7]  [7]  [4]  [1]  [1]  DESTINO
+ 0  BASE  [1]  [1]  [4]  [7] [10]  [7]
+ 1        [1]  [4]  [4]  [7] [10]  [4]
+ 2        [4]  [4]  [1]  [1]  [7]  [4]
+ 3        [7] [10]  [1]  [1]  [4]  [1]
+ 4        [7] [10]  [4]  [4]  [1]  [1]
+ 5       [10]  [7]  [7]  [4]  [1]  [1]  DESTINO
+
 [1]=BAIXO   [4]=MÉDIO   [7]=ALTO   [10]=CRÍTICO
+```
 
 - **36 waypoints** em grade 6×6
 - **5 crateras** classificadas como CRÍTICO (risco = 10) — bloqueadas em modo normal
