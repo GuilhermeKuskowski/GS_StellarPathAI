@@ -1,7 +1,7 @@
 # =============================================================================
 # STELLARPATH AI — Módulo de Otimização de Rota Lunar
 # =============================================================================
-# Disciplina : Dynamic Programming 
+# Disciplina : Dynamic Programming
 # Projeto    : Global Solution 2026 — Space Connect (FIAP)
 # Integrantes: Guilherme de Paula Kuskowski  RM562471
 #              Guilherme Eduardo de Lima      RM566045
